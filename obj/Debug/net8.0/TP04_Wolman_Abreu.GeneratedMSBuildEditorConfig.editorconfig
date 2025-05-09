@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = z:\info\4to info\TP04_Wolman_Abreu
 build_property._RazorSourceGeneratorDebug = 
 
+[z:/info/4to info/TP04_Wolman_Abreu/Views/Home/ArriesgarLetra.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBcnJpZXNnYXJMZXRyYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [z:/info/4to info/TP04_Wolman_Abreu/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
