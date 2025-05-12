@@ -5,18 +5,24 @@ public class Ahorcado {
     public string PalabraArriesgada{get; private set;}
     public char LetraArriesgada{get; private set;}
 
-    public Ahorcado(string palabra, List<char> letraArriesgada, string palabraArriesgada) {
-        Palabra = palabra;
-        LetrasArriesgadas = letraArriesgada;
-        PalabraArriesgada = palabraArriesgada;
+    public Ahorcado() {
+        Palabra = RandomPalabra();
+        PalabraArriesgada = "";
+        LetrasPalabra = new List<char> ();
+        LetrasArriesgadas = new List<char> ();
+    }
+    public string RandomPalabra() {
+        //generar random
+        return "palabra";
     }
     // hacer la palabra apta ahorcado
-    public void HacerAhorcado() {
+    public List <char> HacerAhorcado() {
         int i = 0;
         foreach (Char letra in Palabra) {
             LetrasPalabra[i] = '_';
             i++;
         }
+        return LetrasPalabra;
     }
     // para ver que letras arriesgo
     public void ArriesgarLetra(char LetraUsuario) {

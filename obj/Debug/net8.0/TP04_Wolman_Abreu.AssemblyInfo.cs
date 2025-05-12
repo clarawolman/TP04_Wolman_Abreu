@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP04_Wolman_Abreu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e4b2dbf5860dc9ae4a1cf08177eb90ad3e1b065")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+542872e0f95dddf06cb6684021e52c6b96cbd120")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP04_Wolman_Abreu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP04_Wolman_Abreu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

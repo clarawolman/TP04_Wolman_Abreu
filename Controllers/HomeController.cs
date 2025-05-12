@@ -15,10 +15,13 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Ahorcado ahorcado = new Ahorcado();
         return View();
     }
     
     public IActionResult Jugar() {
-        ViewBag.LetrasPalabra = Ahorcado.HacerAhorcado();
+        Ahorcado ahorcado = new Ahorcado();
+        ViewBag.LetrasPalabra = ahorcado.HacerAhorcado();
+        return View("Jugar");
     }
 }

@@ -1,8 +1,15 @@
 <div>
-    <h1>Jugar!!</h1>
-    @ViewBag.LetrasPalabra
+    <h1>Arriesga</h1>
+    @foreach(Char letra in @ViewBag.LetrasPalabra) {
+        <p>@letra</p>
+    }
 </div>
-    <form action = '@Url.Action("ArriesgarLetra")'>
-    <input type = "text" />
-    <input type = "submit" 
+<section>
+    <form action='@Url.Action("ArriesgarLetra")' method="post" target="_blank">
+        <p>
+        Intereses:<br>
+        <input type="text" name="letra" value="arriesga"> <br>
+        </p>
+    <p><input type="submit" value="Arriesgar letra"></p>
     </form>
+</section>
