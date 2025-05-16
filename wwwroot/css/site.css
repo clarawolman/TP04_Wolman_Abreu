@@ -2,22 +2,42 @@ html {
   font-size: 14px;
   min-height: 100%;
 }
-
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 16px;  
   }
 }
-
+/* hice mi intento pero ya me rendi*/
 body {
   margin: 10px;
   padding: 10px;
+  clear:both;
 }
-
-
+.letrasAhorcado { 
+  
+  margin-bottom: 50%;
+}
 footer {
   margin-top: 10px;
   padding: 10px;
   background-color: #f8f9fa;
   border-top: 1px solid #e9ecef;
+  clear:both;
+}
+li {
+  font-size: 20px;
+  list-style: none;
+  margin-right:5%;
+  margin-left: 1%;
+  float:left;
+}
+main {
+  clear:both;
+  display: inline-block;
+}
+.Perdiste {
+  background-color: rgb(122, 122, 185);
+}
+.Ganaste {
+  background-color: rgb(140, 206, 140);
 }

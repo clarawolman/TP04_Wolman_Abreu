@@ -1,15 +1,47 @@
-<div>
-    <h1>Arriesga</h1>
-    @foreach(Char letra in @ViewBag.LetrasPalabra) {
-        <p>@letra</p>
+<main>
+    
+    @if (ViewBag.AdivinoPalabra == true || ViewBag.GanarPerder == true){
+        <nav class="Ganaste">
+            <p>GANASTE!!</p>
+            <p>La palabra era: @ViewBag.PalabraArriesgada</p>
+        </nav>
     }
-</div>
-<section>
-    <form action='@Url.Action("ArriesgarLetra")' method="post" target="_blank">
-        <p>
-        Intereses:<br>
-        <input type="text" name="letra" value="arriesga"> <br>
-        </p>
-    <p><input type="submit" value="Arriesgar letra"></p>
-    </form>
-</section>
+    else if (ViewBag.AdivinoPalabra == false)
+    {
+        <nav class="Perdiste">
+            <p>PERDISTE</p>
+            <p>La palabra era: @ViewBag.PalabraArriesgada</p>
+        </nav>
+        
+    }
+    else if (ViewBag.GanarPerder != true) 
+    {
+        <h1>Divertite</h1>
+        <ul class="letrasAhorcado">
+        @foreach(char letra in ViewBag.Ahorcado) 
+        {
+            <li>@letra</li>
+        } </ul>
+    
+        <h3> Letras usadas:</h3>
+        @if (ViewBag.LetrasArriesgadas != null) 
+        {
+            @foreach(char letra in ViewBag.LetrasArriesgadas) 
+            {
+            <li>@letra</li>
+            }
+        }
+        <section>
+        <form action='@Url.Action("ArriesgarLetra")'>
+            <input type="text" name="letra" value=""> <br>
+            <p><input type="submit" value="Arriesgar letra"></p>
+        </form>
+        </section>
+        <div>
+        <form action='@Url.Action("ArriesgarPalabra")'>
+            <input type="text" name="palabra" value=""> <br>
+            <p><input type="submit" value="Arriesgar palabra"></p>
+        </form>
+        </div>
+    }
+</main>

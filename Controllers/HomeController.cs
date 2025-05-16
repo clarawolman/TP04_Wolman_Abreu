@@ -11,17 +11,32 @@ public class HomeController : Controller
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
+
     }
 
     public IActionResult Index()
     {
-        Ahorcado ahorcado = new Ahorcado();
         return View();
     }
-    
-    public IActionResult Jugar() {
-        Ahorcado ahorcado = new Ahorcado();
-        ViewBag.LetrasPalabra = ahorcado.HacerAhorcado();
+
+    public IActionResult Jugar()
+    {
+        Ahorcado.ReiniciarJuego();
+        ViewBag.Ahorcado = Ahorcado.ListaNuevaAhorcado();
+        return View("Jugar");
+    }
+    public IActionResult ArriesgarLetra(char letra)
+    {
+        ViewBag.Ahorcado = Ahorcado.ArriesgarLetra(letra);
+        ViewBag.LetraArriesgada = letra;
+        ViewBag.LetrasArriesgadas = Ahorcado.DevolverArriesgadas();
+        ViewBag.GanarPerder = Ahorcado.ComprobarGanar();
+        return View("Jugar");
+    }
+    public IActionResult ArriesgarPalabra(string palabra)
+    {
+        ViewBag.AdivinoPalabra = Ahorcado.ArriesgarPalabra(palabra);
+        ViewBag.PalabraArriesgada = palabra;
         return View("Jugar");
     }
 }
