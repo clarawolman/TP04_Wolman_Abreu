@@ -35,6 +35,7 @@ public class HomeController : Controller
     }
     public IActionResult ArriesgarPalabra(string palabra)
     {
+        ViewBag.Palabra = Ahorcado.RandomPalabra();
         ViewBag.AdivinoPalabra = Ahorcado.ArriesgarPalabra(palabra);
         ViewBag.PalabraArriesgada = palabra;
         return View("Jugar");

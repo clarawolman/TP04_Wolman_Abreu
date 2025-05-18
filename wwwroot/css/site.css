@@ -1,43 +1,129 @@
 html {
-  font-size: 14px;
+  font-size: 16px;
   min-height: 100%;
 }
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;  
-  }
-}
-/* hice mi intento pero ya me rendi*/
+
 body {
-  margin: 10px;
-  padding: 10px;
-  clear:both;
+  margin: 20px;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff0f5;
+  color: #4a4a4a;
 }
-.letrasAhorcado { 
-  
-  margin-bottom: 50%;
-}
-footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
-  clear:both;
-}
-li {
-  font-size: 20px;
-  list-style: none;
-  margin-right:5%;
-  margin-left: 1%;
-  float:left;
-}
+
 main {
-  clear:both;
-  display: inline-block;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #f7cde2;
+  box-shadow: 0 4px 10px rgba(255, 192, 203, 0.2);
 }
+
+h1, h3 {
+  color: #d16ba5;
+}
+
+a {
+  text-decoration: none;
+  color: #d16ba5;
+  font-weight: bold;
+}
+
+a p {
+  font-size: 20px;
+  padding: 12px;
+  background-color: #ffe0ef;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+.letrasAhorcado {
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.letrasAhorcado li {
+  list-style: none;
+  font-size: 22px;
+  background-color: #f9d5ec;
+  color: #4a4a4a;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+.letrasUsadas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.letrasUsadas li {
+  font-size: 12px;
+  padding: 4px 8px;
+  background-color: #fce4ec;
+  color: #a15c83;
+  border-radius: 4px;
+  list-style: none;
+}
+
+form {
+  margin: 15px 0;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  width: 180px;
+  margin-bottom: 10px;
+  border: 1px solid #f5b0d2;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #f7a8c8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
 .Perdiste {
-  background-color: rgb(122, 122, 185);
+  background-color: #ec6969;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #d0004d;
 }
+
 .Ganaste {
-  background-color: rgb(140, 206, 140);
+  background-color: #cbf3b4;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #3d7a3d;
+}
+header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffe9f3;
+  border-top: 1px solid #f2bdd5;
+  text-align: center;
+  border-radius: 6px;
 }

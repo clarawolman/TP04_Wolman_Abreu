@@ -3,14 +3,13 @@
     @if (ViewBag.AdivinoPalabra == true || ViewBag.GanarPerder == true){
         <nav class="Ganaste">
             <p>GANASTE!!</p>
-            <p>La palabra era: @ViewBag.PalabraArriesgada</p>
         </nav>
     }
     else if (ViewBag.AdivinoPalabra == false)
     {
         <nav class="Perdiste">
             <p>PERDISTE</p>
-            <p>La palabra era: @ViewBag.PalabraArriesgada</p>
+            <p>La palabra era: @ViewBag.Palabra</p>
         </nav>
         
     }
